@@ -1,0 +1,61 @@
+# Create user
+### 
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "hapiz",
+  "email": "hapizzz@gmail.com",
+  "password": "33338888",
+  "identity_type": "NO HP",
+  "identity_number": "081914960037"
+}
+
+# getAlluser
+###
+GET http://localhost:3000/api/v1/users
+
+# getDetailuser
+###
+GET http://localhost:3000/api/v1/users/2
+
+# createAccount
+###
+POST http://localhost:3000/api/v1/accounts
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "bank_name": "BRI",
+  "bank_account_number": "32323789",
+  "balance": "7000000"
+ 
+}
+
+# getAllaccount
+###
+GET http://localhost:3000/api/v1/accounts
+
+# getDetailaccount
+###
+GET http://localhost:3000/api/v1/accounts/2
+
+# createTransaction
+###
+POST http://localhost:3000/api/v1/transactions
+Content-Type: application/json
+
+{
+  "source_account_id": 1,
+  "destination_account_id": 2,
+  "amount": "1000000"
+
+}
+
+# getAlltransactions
+###
+GET http://localhost:3000/api/v1/transactions
+
+# getDetailtransactions
+###
+GET http://localhost:3000/api/v1/transactions/1
